@@ -113,6 +113,18 @@
           margin-bottom: 0;
         }
 
+         /* Estilos específicos para dispositivos de escritorio */
+         @media (min-width: 769px) {
+            #navbar-example3 {
+                overflow-y: auto;
+                max-height: calc(80vh - 56px);
+            }
+            .col-lg-10 {
+                overflow-y: auto;
+                max-height: calc(80vh - 56px);
+            }
+        }
+
         /* Estilos específicos para dispositivos móviles */
         @media (max-width: 768px) {
             .mobile-scroll {

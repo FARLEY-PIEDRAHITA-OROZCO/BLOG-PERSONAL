@@ -115,13 +115,12 @@
 
         /* Estilos específicos para dispositivos móviles */
         @media (max-width: 768px) {
-            .blog-header {
-                height: auto;
+            .mobile-scroll {
+                overflow-y: auto;
+                max-height: calc(100vh - 56px); /* Ajusta según el tamaño del encabezado */
             }
             #navbar-example3 {
-                position: static;
-                height: auto;
-                overflow-y: visible;
+                overflow-y: hidden;
             }
         }
     </style>
@@ -159,7 +158,7 @@
 <main class="container">
     <div class="row">
         <div class="col-lg-2"> <!-- Cambiado a col-lg para dispositivos grandes -->
-            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-2 border-end" style="overflow-y: auto; max-height: calc(80vh - 56px);">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-2 border-end mobile-scroll">
                 <!-- Tu barra de navegación lateral -->
                 <nav class="nav nav-pills flex-column">
                     <a class="nav-link" href="#item-1">Item 1</a>
@@ -173,22 +172,10 @@
                         <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
                         <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
                     </nav>
-                    <nav class="nav nav-pills flex-column nav-secondary">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                    </nav>
-                    <nav class="nav nav-pills flex-column nav-secondary">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                    </nav>
-                    <nav class="nav nav-pills flex-column nav-secondary">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                    </nav>
                 </nav>
             </nav>
         </div>
-        <div class="col-lg-10" style="overflow-y: auto; max-height: calc(80vh - 56px);"> <!-- Cambiado a col-lg para dispositivos grandes -->
+        <div class="col-lg-10 mobile-scroll"> <!-- Cambiado a col-lg para dispositivos grandes -->
             <!-- Tu contenido principal -->
             <h1 id="item-1">Hello</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>

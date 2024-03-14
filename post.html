@@ -108,33 +108,23 @@
           text-align: center;
           background-color: #f9f9f9;
           border-top: .05rem solid #e5e5e5;
+          bottom: 0;
+          left: 0;
+          width: 100%;
         }
         .blog-footer p:last-child {
           margin-bottom: 0;
         }
 
-         /* Estilos específicos para dispositivos de escritorio */
-         @media (min-width: 769px) {
-            #navbar-example3 {
-                overflow-y: auto;
-                max-height: calc(80vh - 56px);
-            }
-            .col-lg-10 {
-                overflow-y: auto;
-                max-height: calc(80vh - 56px);
-            }
+        .col-lg-2{
+          margin-bottom: 40px;
         }
 
-        /* Estilos específicos para dispositivos móviles */
-        @media (max-width: 768px) {
-            .mobile-scroll {
-                overflow-y: auto;
-                max-height: calc(100vh - 56px); /* Ajusta según el tamaño del encabezado */
-            }
-            #navbar-example3 {
-                overflow-y: hidden;
-            }
+        .col-lg-10{
+          margin-top: 10px;
         }
+
+       
     </style>
 </head>
 <body>
@@ -167,63 +157,63 @@
     </header>
 </div>
 
-<main class="container">
-    <div class="row">
-        <div class="col-lg-2"> <!-- Cambiado a col-lg para dispositivos grandes -->
-            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-2 border-end mobile-scroll">
-                <!-- Tu barra de navegación lateral -->
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Item 1</a>
-                    <nav class="nav nav-pills flex-column nav-secondary">
-                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                    </nav>
-                    <a class="nav-link" href="#item-2">Item 2</a>
-                    <a class="nav-link" href="#item-3">Item 3</a>
-                    <nav class="nav nav-pills flex-column nav-secondary">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+<div id="main-container">
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-2"> <!-- Cambiado a col-lg para dispositivos grandes -->
+                    <!-- Tu barra de navegación lateral -->
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column nav-secondary">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column nav-secondary">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                        <nav class="nav nav-pills flex-column nav-secondary">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                        <nav class="nav nav-pills flex-column nav-secondary">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                        <nav class="nav nav-pills flex-column nav-secondary">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
                     </nav>
                 </nav>
-            </nav>
+            </div>
+            <div class="col-lg-10"> <!-- Cambiado a col-lg para dispositivos grandes -->
+                <!-- Tu contenido principal -->
+                <h1 id="item-1">Hello</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
+                    <!-- Agregar más contenido aquí -->
+            </div>
         </div>
-        <div class="col-lg-10 mobile-scroll"> <!-- Cambiado a col-lg para dispositivos grandes -->
-            <!-- Tu contenido principal -->
-            <h1 id="item-1">Hello</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum, non sequi soluta voluptatum vitae libero esse nesciunt temporibus ratione nobis quam doloremque molestias! Optio sed eum minima quaerat cumque.</p>
-                <h2 id="item-2">Hello World</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quam vero soluta recusandae quia esse, commodi sequi nulla, ratione accusantium aliquid repudiandae sunt numquam, sed veniam at perferendis minus officiis!</p>
-                <h3 id="item-3">Hello mundo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, beatae. Corporis placeat at qui ducimus beatae, laudantium quo dolore quaerat nam quidem ad. Suscipit aliquam neque dolor quidem, voluptatem iusto.</p>
-        </div>
-    </div>
-</main>
+    </main>
+</div>
 
 <footer class="blog-footer py-2"> <!-- Reducido el padding vertical -->
     <p>
